@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographic: Thương Hiệu ABSim</title>
+    <title>Infographic Thương Hiệu ABSim</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,15 +13,15 @@
     <style>
         body {
             font-family: 'Be Vietnam Pro', sans-serif;
-            background-color: #f0f4f8;
+            background-color: #f0f4f8; /* Light gray-blue background */
         }
         .chart-container {
             position: relative;
             margin: auto;
             height: 40vh;
             width: 100%;
-            max-width: 500px;
-            max-height: 400px;
+            max-width: 500px; /* Max width for charts */
+            max-height: 400px; /* Max height for charts */
         }
         .flowchart-step {
             border-width: 2px;
@@ -35,24 +35,33 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -10px;
+            left: -10px; /* Position for the circle */
             top: 50%;
             transform: translateY(-50%);
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: #118AB2;
-            border: 4px solid #F0F4F8;
+            background-color: #118AB2; /* Energetic & Playful - Blue */
+            border: 4px solid #F0F4F8; /* Match body background */
         }
         .material-card {
             background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px; /* Softer corners */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .material-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px); /* Lift effect on hover */
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        }
+        /* Helper for links */
+        .text-link {
+            color: #118AB2; /* Energetic & Playful - Blue */
+            text-decoration: none;
+        }
+        .text-link:hover {
+            text-decoration: underline;
+            color: #073B4C; /* Energetic & Playful - Dark Blue */
         }
     </style>
 </head>
@@ -60,7 +69,7 @@
     
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4" style="color: #073B4C;">Toàn Cảnh Thương Hiệu <span style="color: #118AB2;">ABSim</span></h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4" style="color: #073B4C;">Toàn Cảnh Thương Hiệu <a href="https://absim.vn" target="_blank" rel="noopener noreferrer" style="color: #118AB2;" class="hover:underline">ABSim</a></h1>
             <p class="text-xl md:text-2xl font-semibold" style="color: #FF6B6B;">"Sim Chất - Giá Độc"</p>
             <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
                 Kế thừa tinh hoa từ SIM.VN, ABSim ra mắt vào tháng 5/2025, viết tiếp hành trình chinh phục thị trường SIM số đẹp Việt Nam với một tầm nhìn mới, năng động và toàn diện hơn.
@@ -73,11 +82,11 @@
                 <h3 class="text-xl font-bold mt-4" style="color: #073B4C;">Sim Trong Kho</h3>
                 <p class="text-gray-600 mt-2">Sở hữu một trong những kho sim số lớn nhất thị trường, đa dạng các nhà mạng.</p>
             </div>
-            <div class="material-card p-6 text-center">
+            <a href="https://absim.vn/dinh-gia-sim" target="_blank" rel="noopener noreferrer" class="material-card p-6 text-center block hover:shadow-xl">
                 <div class="text-6xl font-extrabold" style="color: #FFD166;">0.5s</div>
                 <h3 class="text-xl font-bold mt-4" style="color: #073B4C;">Định Giá Bằng AI</h3>
                 <p class="text-gray-600 mt-2">Công cụ định giá siêu tốc, ứng dụng AI và Big Data để phân tích giá trị SIM chính xác.</p>
-            </div>
+            </a>
             <div class="material-card p-6 text-center lg:col-span-1 md:col-span-2">
                 <div class="text-6xl font-extrabold" style="color: #118AB2;">No.1</div>
                 <h3 class="text-xl font-bold mt-4" style="color: #073B4C;">Đối Tác Cấp 1</h3>
@@ -116,28 +125,28 @@
                     </div>
                 </div>
 
-                <div class="material-card p-8">
+                <div class="material-card p-8 overflow-hidden">
                     <h3 class="text-2xl font-bold text-center mb-6" style="color: #118AB2;">Cơ sở của "Giá Độc"?</h3>
                     <p class="text-center text-gray-600 mb-8">Mức giá cạnh tranh đến từ việc tối ưu hóa chuỗi cung ứng và hệ thống phân phối, loại bỏ các khâu trung gian.</p>
-                    <div class="relative p-6 rounded-lg" style="background-color: #F0F9FF;">
+                    <div class="relative p-6 rounded-lg h-48 flex items-center justify-center" style="background-color: #F0F9FF;">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="w-24 h-24 rounded-full flex items-center justify-center font-bold text-xl text-white" style="background-color: #118AB2;">Giá Độc</div>
                         </div>
-                        <div class="relative">
-                            <div class="absolute top-[-50px] left-1/2 -translate-x-1/2 text-center">
-                                <div class="p-3 bg-white rounded-lg shadow-md">🤝</div>
+                        <div class="relative w-full h-full">
+                            <div class="absolute top-[-40px] sm:top-[-50px] left-1/2 -translate-x-1/2 text-center">
+                                <div class="p-2 sm:p-3 bg-white rounded-lg shadow-md text-2xl">🤝</div>
                                 <p class="text-xs font-semibold mt-1">Quan hệ<br>trực tiếp nhà mạng</p>
                             </div>
-                            <div class="absolute bottom-[-50px] left-1/2 -translate-x-1/2 text-center">
-                                <div class="p-3 bg-white rounded-lg shadow-md">🚚</div>
+                            <div class="absolute bottom-[-40px] sm:bottom-[-50px] left-1/2 -translate-x-1/2 text-center">
+                                <div class="p-2 sm:p-3 bg-white rounded-lg shadow-md text-2xl">🚚</div>
                                 <p class="text-xs font-semibold mt-1">Giao hàng<br>toàn quốc</p>
                             </div>
-                            <div class="absolute left-[-50px] top-1/2 -translate-y-1/2 text-center">
-                                <div class="p-3 bg-white rounded-lg shadow-md">👨‍💻</div>
+                            <div class="absolute left-[-30px] sm:left-[-50px] top-1/2 -translate-y-1/2 text-center">
+                                <div class="p-2 sm:p-3 bg-white rounded-lg shadow-md text-2xl">👨‍💻</div>
                                 <p class="text-xs font-semibold mt-1">Đội ngũ<br>"Thợ sim" đông đảo</p>
                             </div>
-                            <div class="absolute right-[-50px] top-1/2 -translate-y-1/2 text-center">
-                                <div class="p-3 bg-white rounded-lg shadow-md">💸</div>
+                            <div class="absolute right-[-30px] sm:right-[-50px] top-1/2 -translate-y-1/2 text-center">
+                                <div class="p-2 sm:p-3 bg-white rounded-lg shadow-md text-2xl">💸</div>
                                 <p class="text-xs font-semibold mt-1">Loại bỏ<br>chi phí trung gian</p>
                             </div>
                         </div>
@@ -151,7 +160,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="material-card p-6">
                     <h3 class="text-2xl font-bold text-center mb-4" style="color: #073B4C;">Phân Loại Sim Phổ Biến</h3>
-                    <p class="text-center text-gray-600 mb-4">ABSim đáp ứng mọi nhu cầu, từ Sim Phong Thủy mang lại may mắn đến Sim Đẳng Cấp khẳng định vị thế.</p>
+                    <p class="text-center text-gray-600 mb-4">
+                        ABSim đáp ứng mọi nhu cầu, từ <a href="https://absim.vn/sim-phong-thuy" target="_blank" rel="noopener noreferrer" class="text-link">Sim Phong Thủy</a> mang lại may mắn đến <a href="https://absim.vn/sim-luc-quy" target="_blank" rel="noopener noreferrer" class="text-link">Sim Đẳng Cấp</a> khẳng định vị thế, <a href="https://absim.vn/sim-de-nho" target="_blank" rel="noopener noreferrer" class="text-link">Sim Dễ Nhớ</a> cho kinh doanh và <a href="https://absim.vn/sim-nam-sinh" target="_blank" rel="noopener noreferrer" class="text-link">Sim Năm Sinh</a> đầy ý nghĩa.
+                    </p>
                     <div class="chart-container">
                         <canvas id="simTypeDistributionChart"></canvas>
                     </div>
@@ -163,7 +174,7 @@
                         <li class="flex items-start">
                             <span class="text-2xl mr-3" style="color: #FF6B6B;">🔮</span>
                             <div>
-                                <h4 class="font-bold">Tư Vấn Phong Thủy Sim</h4>
+                                <h4 class="font-bold"><a href="https://absim.vn/xem-phong-thuy-sim" target="_blank" rel="noopener noreferrer" class="text-link">Tư Vấn Phong Thủy Sim</a></h4>
                                 <p class="text-gray-600 text-sm">Với sự cố vấn của chuyên gia Dương Việt Khánh, giúp khách hàng chọn sim hợp mệnh.</p>
                             </div>
                         </li>
@@ -191,13 +202,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="material-card p-6 text-center">
                     <img src="https://placehold.co/100x100/118AB2/FFFFFF?text=MT" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" alt="CEO Mai Văn Tiến">
-                    <h3 class="text-xl font-bold" style="color: #073B4C;">Ông Mai Văn Tiến</h3>
+                    <h3 class="text-xl font-bold" style="color: #073B4C;"><a href="https://absim.vn/bai-viet/ceo-mai-van-tien/" target="_blank" rel="noopener noreferrer" class="text-link">Ông Mai Văn Tiến</a></h3>
                     <p class="font-semibold" style="color: #118AB2;">Nhà sáng lập & CEO</p>
                     <p class="text-gray-600 mt-2 italic">"Kinh doanh sớm hay muộn không quan trọng, quan trọng là giá trị bạn đem lại."</p>
                 </div>
                  <div class="material-card p-6 text-center">
                     <img src="https://placehold.co/100x100/FF6B6B/FFFFFF?text=DK" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" alt="Chuyên gia Dương Việt Khánh">
-                    <h3 class="text-xl font-bold" style="color: #073B4C;">Ông Dương Việt Khánh</h3>
+                    <h3 class="text-xl font-bold" style="color: #073B4C;"><a href="https://absim.vn/bai-viet/authors/duykhanhsimvn/" target="_blank" rel="noopener noreferrer" class="text-link">Ông Dương Việt Khánh</a></h3>
                     <p class="font-semibold" style="color: #FF6B6B;">Chuyên gia Phong thủy Cấp cao</p>
                     <p class="text-gray-600 mt-2 italic">"Khi con số không chỉ là dữ liệu, mà còn là bản giao hưởng của vận mệnh và cơ hội."</p>
                 </div>
@@ -226,11 +237,13 @@
                 </div>
                  <div class="material-card p-6">
                     <h3 class="text-xl font-bold mb-4 flex items-center"><span class="text-2xl mr-2">🗞️</span> Được Truyền Thông Đánh Giá Cao</h3>
-                    <p class="text-gray-600 mb-4">Sự chuyển đổi từ SIM.VN sang ABSim được các tờ báo uy tín như Báo Bắc Kạn, Báo Cà Mau ghi nhận là "bước đi khôn ngoan", "vẽ tiếp hành trình dang dở".</p>
+                    <p class="text-gray-600 mb-4">Sự chuyển đổi từ SIM.VN sang ABSim được các tờ báo uy tín ghi nhận là "bước đi khôn ngoan", "vẽ tiếp hành trình dang dở".</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">VTCNews</span>
-                        <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Báo Thanh Niên</span>
-                         <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Pháp Luật Online</span>
+                        <a href="https://vtcnews.vn/simvn-hanh-trinh-thuc-hien-su-menh-ket-noi-cong-dong-viet-ar849485.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded">VTCNews</a>
+                        <a href="https://www.24h.com.vn/kham-pha-cong-nghe/simvn-tang-toc-tren-duong-dua-trong-linh-vuc-sim-so-dep-c675a1417811.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-100 hover:bg-green-200 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">24h</a>
+                        <a href="https://www.anninhthudo.vn/simvn-mang-toi-trai-nghiem-mua-sim-so-dep-de-dang-va-tien-nghi-post564801.antd" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-100 hover:bg-yellow-200 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded">An Ninh Thủ Đô</a>
+                        <a href="https://baohagiang.vn/thong-tin-quang-cao/202505/absim-lot-xac-ngoan-muc-tu-simvn-kien-tao-ky-nguyen-sim-so-dep-dot-pha-e262c85/" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-100 hover:bg-red-200 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded">Báo Hà Giang</a>
+                        <a href="https://baothaibinh.com.vn/tin-tuc/206/224398/absim-mot-dien-mao-moi-choi-lon-tang-sim-so-dep-moi-ngay" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-100 hover:bg-purple-200 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded">Báo Thái Bình</a>
                     </div>
                 </div>
             </div>
@@ -258,14 +271,12 @@
         <footer class="text-center pt-12 border-t border-gray-200">
              <h3 class="text-2xl font-bold" style="color: #073B4C;">Kết Nối Với ABSim</h3>
              <p class="text-gray-600 mt-2">Tìm kiếm chiếc sim mơ ước của bạn ngay hôm nay!</p>
-             <div class="mt-6 flex justify-center items-center gap-6">
-                <p><strong>Hotline:</strong> <a href="tel:0941326699" class="text-blue-600 hover:underline">094.132.6699</a></p>
-                <p><strong>Email:</strong> <a href="mailto:info@sim.vn" class="text-blue-600 hover:underline">info@sim.vn</a></p>
+             <div class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+                <p><strong>Hotline:</strong> <a href="tel:0941326699" class="text-link">094.132.6699</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@sim.vn" class="text-link">info@sim.vn</a></p>
              </div>
-             <p class="mt-8 text-sm text-gray-500">&copy; 2025 CÔNG TY CỔ PHẦN SIM.VN. Infographic được tạo dựa trên báo cáo phân tích.</p>
-             
+             <p class="mt-8 text-sm text-gray-500">© 2025 <a href="https://absim.vn/bai-viet/gioi-thieu/" target="_blank" rel="noopener noreferrer" class="text-link">CÔNG TY CỔ PHẦN SIM.VN</a>.</p>
         </footer>
-
     </main>
 
 <script>
@@ -309,7 +320,8 @@
                     font: {
                         family: "'Be Vietnam Pro', sans-serif",
                         size: 12
-                    }
+                    },
+                    color: '#073B4C'
                 }
             },
             tooltip: {
@@ -325,6 +337,8 @@
                 backgroundColor: '#073B4C',
                 titleColor: '#FFFFFF',
                 bodyColor: '#FFFFFF',
+                padding: 10,
+                cornerRadius: 6
             }
         }
     };
@@ -346,10 +360,11 @@
                     '#118AB2', 
                     '#06D6A0',
                     '#FFD166',
-                    '#FF6B6B'
+                    '#EF476F' // Changed one color for better distinction from FF6B6B
                 ],
                 borderColor: '#FFFFFF',
-                borderWidth: 3
+                borderWidth: 3,
+                hoverOffset: 8
             }]
         },
         options: {
@@ -372,8 +387,9 @@
             datasets: [{
                 label: 'Số Lượng Sim Ước Tính (triệu)',
                 data: [12, 10, 9, 8.5, 3],
-                backgroundColor: ['#06D6A0', '#118AB2', '#FFD166', '#FF6B6B', '#ced4da'],
+                backgroundColor: ['#06D6A0', '#118AB2', '#FFD166', '#EF476F', '#748DA6'], // Adjusted colors
                 borderRadius: 5,
+                borderSkipped: false,
             }]
         },
         options: {
@@ -383,7 +399,23 @@
                     beginAtZero: true,
                     title: {
                         display: true,
-                        text: 'Số lượng (triệu sim)'
+                        text: 'Số lượng (triệu sim)',
+                        font: { family: "'Be Vietnam Pro', sans-serif", size: 14 },
+                        color: '#073B4C'
+                    },
+                    ticks: {
+                        color: '#073B4C'
+                    },
+                    grid: {
+                        color: '#E0E7FF' // Lighter grid lines
+                    }
+                },
+                x: {
+                     ticks: {
+                        color: '#073B4C'
+                    },
+                    grid: {
+                        display: false // Hide x-axis grid lines for cleaner look
                     }
                 }
             },
