@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Phân Tích Toàn Cảnh Thương Hiệu ABSim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 40vh;
+            width: 100%;
+            max-width: 500px;
+            max-height: 400px;
+        }
+        .flowchart-step {
+            border-width: 2px;
+            border-style: solid;
+            transition: all 0.3s ease;
+        }
+        .flowchart-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #118AB2;
+            border: 4px solid #F0F4F8;
+        }
+        .material-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .material-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4" style="color: #073B4C;">Toàn Cảnh Thương Hiệu <span style="color: #118AB2;">ABSim</span></h1>
+            <p class="text-xl md:text-2xl font-semibold" style="color: #FF6B6B;">"Sim Chất - Giá Độc"</p>
+            <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+                Kế thừa tinh hoa từ SIM.VN, ABSim ra mắt vào tháng 5/2025, viết tiếp hành trình chinh phục thị trường SIM số đẹp Việt Nam với một tầm nhìn mới, năng động và toàn diện hơn.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="material-card p-6 text-center">
+                <div class="text-6xl font-extrabold" style="color: #06D6A0;">35M+</div>
+                <h3 class="text-xl font-bold mt-4" style="color: #073B4C;">Sim Trong Kho</h3>
+                <p class="text-gray-600 mt-2">Sở hữu một trong những kho sim số lớn nhất thị trường, đa dạng các nhà mạng.</p>
+            </div>
+            <div class="material-card p-6 text-center">
+                <div class="text-6xl font-extrabold" style="color: #FFD166;">0.5s</div>
+                <h3 class="text-xl font-bold mt-4" style="color: #073B4C;">Định Giá Bằng AI</h3>
+                <p class="text-gray-600 mt-2">Công cụ định giá siêu tốc, ứng dụng AI và Big Data để phân tích giá trị SIM chính xác.</p>
+            </div>
+            <div class="material-card p-6 text-center lg:col-span-1 md:col-span-2">
+                <div class="text-6xl font-extrabold" style="color: #118AB2;">No.1</div>
+                <h3 class="text-xl font-bold mt-4" style="color: #073B4C;">Đối Tác Cấp 1</h3>
+                <p class="text-gray-600 mt-2">Là đại lý cấp 1 của các nhà mạng lớn, đảm bảo nguồn gốc và giá cạnh tranh.</p>
+            </div>
+        </div>
+
+        <section id="philosophy" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12" style="color: #073B4C;">Giải Mã Slogan: "Sim Chất - Giá Độc"</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="material-card p-8">
+                    <h3 class="text-2xl font-bold text-center mb-6" style="color: #FF6B6B;">Thế nào là "Sim Chất"?</h3>
+                    <p class="text-center text-gray-600 mb-8">Mỗi SIM được tuyển chọn qua quy trình 3 giai đoạn nghiêm ngặt, đảm bảo cả về thẩm mỹ, ý nghĩa và giá trị tiềm năng.</p>
+                    <div class="space-y-6">
+                        <div class="flowchart-step p-4 rounded-lg flex items-center" style="border-color: #06D6A0; background-color: #F0FFF9;">
+                            <span class="text-3xl font-bold mr-4" style="color: #06D6A0;">1</span>
+                            <div>
+                                <h4 class="font-bold">Sàng lọc bởi "Thợ Sim"</h4>
+                                <p class="text-sm text-gray-600">Đội ngũ giàu kinh nghiệm tìm kiếm các dãy số tiềm năng có cấu trúc đẹp.</p>
+                            </div>
+                        </div>
+                        <div class="flowchart-step p-4 rounded-lg flex items-center" style="border-color: #FFD166; background-color: #FFFBF0;">
+                            <span class="text-3xl font-bold mr-4" style="color: #FFD166;">2</span>
+                            <div>
+                                <h4 class="font-bold">Thẩm định bởi Chuyên gia</h4>
+                                <p class="text-sm text-gray-600">Đánh giá sâu về ý nghĩa phong thủy và giá trị của từng con số.</p>
+                            </div>
+                        </div>
+                        <div class="flowchart-step p-4 rounded-lg flex items-center" style="border-color: #118AB2; background-color: #F0F9FF;">
+                            <span class="text-3xl font-bold mr-4" style="color: #118AB2;">3</span>
+                            <div>
+                                <h4 class="font-bold">Chấm điểm bằng Công nghệ</h4>
+                                <p class="text-sm text-gray-600">Phân tích tổng điểm bằng công cụ hiện đại, chỉ chọn SIM từ 7 điểm trở lên.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-card p-8">
+                    <h3 class="text-2xl font-bold text-center mb-6" style="color: #118AB2;">Cơ sở của "Giá Độc"?</h3>
+                    <p class="text-center text-gray-600 mb-8">Mức giá cạnh tranh đến từ việc tối ưu hóa chuỗi cung ứng và hệ thống phân phối, loại bỏ các khâu trung gian.</p>
+                    <div class="relative p-6 rounded-lg" style="background-color: #F0F9FF;">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-24 h-24 rounded-full flex items-center justify-center font-bold text-xl text-white" style="background-color: #118AB2;">Giá Độc</div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute top-[-50px] left-1/2 -translate-x-1/2 text-center">
+                                <div class="p-3 bg-white rounded-lg shadow-md">🤝</div>
+                                <p class="text-xs font-semibold mt-1">Quan hệ<br>trực tiếp nhà mạng</p>
+                            </div>
+                            <div class="absolute bottom-[-50px] left-1/2 -translate-x-1/2 text-center">
+                                <div class="p-3 bg-white rounded-lg shadow-md">🚚</div>
+                                <p class="text-xs font-semibold mt-1">Giao hàng<br>toàn quốc</p>
+                            </div>
+                            <div class="absolute left-[-50px] top-1/2 -translate-y-1/2 text-center">
+                                <div class="p-3 bg-white rounded-lg shadow-md">👨‍💻</div>
+                                <p class="text-xs font-semibold mt-1">Đội ngũ<br>"Thợ sim" đông đảo</p>
+                            </div>
+                            <div class="absolute right-[-50px] top-1/2 -translate-y-1/2 text-center">
+                                <div class="p-3 bg-white rounded-lg shadow-md">💸</div>
+                                <p class="text-xs font-semibold mt-1">Loại bỏ<br>chi phí trung gian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ecosystem" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12" style="color: #073B4C;">Hệ Sinh Thái Sản Phẩm & Dịch Vụ Toàn Diện</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="material-card p-6">
+                    <h3 class="text-2xl font-bold text-center mb-4" style="color: #073B4C;">Phân Loại Sim Phổ Biến</h3>
+                    <p class="text-center text-gray-600 mb-4">ABSim đáp ứng mọi nhu cầu, từ Sim Phong Thủy mang lại may mắn đến Sim Đẳng Cấp khẳng định vị thế.</p>
+                    <div class="chart-container">
+                        <canvas id="simTypeDistributionChart"></canvas>
+                    </div>
+                </div>
+                <div class="material-card p-6">
+                     <h3 class="text-2xl font-bold text-center mb-4" style="color: #073B4C;">Dịch Vụ Giá Trị Gia Tăng</h3>
+                     <p class="text-center text-gray-600 mb-8">Không chỉ bán sim, ABSim còn cung cấp các giải pháp toàn diện cho người dùng.</p>
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3" style="color: #FF6B6B;">🔮</span>
+                            <div>
+                                <h4 class="font-bold">Tư Vấn Phong Thủy Sim</h4>
+                                <p class="text-gray-600 text-sm">Với sự cố vấn của chuyên gia Dương Việt Khánh, giúp khách hàng chọn sim hợp mệnh.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-2xl mr-3" style="color: #06D6A0;">💰</span>
+                            <div>
+                                <h4 class="font-bold">Thu Mua & Cầm Cố Sim</h4>
+                                <p class="text-gray-600 text-sm">Tạo thanh khoản cho sim số đẹp với thủ tục nhanh chóng, lãi suất ưu đãi.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-2xl mr-3" style="color: #FFD166;">✅</span>
+                            <div>
+                                <h4 class="font-bold">Đăng Ký Chính Chủ</h4>
+                                <p class="text-gray-600 text-sm">Hỗ trợ đăng ký thông tin chính chủ miễn phí, đảm bảo quyền lợi khách hàng.</p>
+                            </div>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experts" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12" style="color: #073B4C;">Đội Ngũ Đứng Sau Thành Công</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="material-card p-6 text-center">
+                    <img src="https://placehold.co/100x100/118AB2/FFFFFF?text=MT" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" alt="CEO Mai Văn Tiến">
+                    <h3 class="text-xl font-bold" style="color: #073B4C;">Ông Mai Văn Tiến</h3>
+                    <p class="font-semibold" style="color: #118AB2;">Nhà sáng lập & CEO</p>
+                    <p class="text-gray-600 mt-2 italic">"Kinh doanh sớm hay muộn không quan trọng, quan trọng là giá trị bạn đem lại."</p>
+                </div>
+                 <div class="material-card p-6 text-center">
+                    <img src="https://placehold.co/100x100/FF6B6B/FFFFFF?text=DK" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" alt="Chuyên gia Dương Việt Khánh">
+                    <h3 class="text-xl font-bold" style="color: #073B4C;">Ông Dương Việt Khánh</h3>
+                    <p class="font-semibold" style="color: #FF6B6B;">Chuyên gia Phong thủy Cấp cao</p>
+                    <p class="text-gray-600 mt-2 italic">"Khi con số không chỉ là dữ liệu, mà còn là bản giao hưởng của vận mệnh và cơ hội."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="market-presence" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12" style="color: #073B4C;">Dấu Ấn Thị Trường & Quy Mô Hoạt Động</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="material-card p-6 md:col-span-2">
+                    <h3 class="text-2xl font-bold text-center mb-4" style="color: #073B4C;">Hợp Tác Toàn Diện Với Các Nhà Mạng</h3>
+                    <p class="text-center text-gray-600 mb-4">Là đối tác chiến lược của tất cả các nhà mạng lớn, ABSim đảm bảo nguồn cung sim phong phú và đa dạng nhất.</p>
+                     <div class="chart-container h-[50vh] max-h-[450px]">
+                        <canvas id="carrierPartnershipChart"></canvas>
+                    </div>
+                </div>
+                 <div class="material-card p-6">
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><span class="text-2xl mr-2">📍</span> Hệ Thống Cửa Hàng</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="font-medium">Hà Nội: 263 Xã Đàn, Đống Đa</li>
+                        <li class="font-medium">TP. HCM: 730 Lũy Bán Bích, Tân Phú</li>
+                        <li class="font-medium">Đà Nẵng: 56/1 Phạm Văn Nghị, Thanh Khê</li>
+                        <li class="font-medium">Hưng Yên: 71 Thủy Nguyên, KĐT Ecopark</li>
+                        <li class="font-medium">Tuyên Quang: 117 đường 17/8, P. Minh Xuân</li>
+                    </ul>
+                </div>
+                 <div class="material-card p-6">
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><span class="text-2xl mr-2">🗞️</span> Được Truyền Thông Đánh Giá Cao</h3>
+                    <p class="text-gray-600 mb-4">Sự chuyển đổi từ SIM.VN sang ABSim được các tờ báo uy tín như Báo Bắc Kạn, Báo Cà Mau ghi nhận là "bước đi khôn ngoan", "vẽ tiếp hành trình dang dở".</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">VTCNews</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Báo Thanh Niên</span>
+                         <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Pháp Luật Online</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="mb-20">
+             <h2 class="text-3xl font-bold text-center mb-16" style="color: #073B4C;">Hành Trình Phát Triển</h2>
+             <div class="relative max-w-2xl mx-auto pl-8">
+                <div class="absolute left-4 top-0 h-full w-0.5 bg-gray-300"></div>
+                <div class="timeline-item relative mb-12">
+                     <h3 class="text-xl font-bold" style="color: #118AB2;">Thành Công Với SIM.VN</h3>
+                     <p class="text-gray-600">Dưới sự dẫn dắt của CEO Mai Văn Tiến, SIM.VN trở thành thương hiệu uy tín, tạo việc làm cho hàng nghìn người với kho sim khổng lồ.</p>
+                </div>
+                <div class="timeline-item relative mb-12">
+                     <h3 class="text-xl font-bold" style="color: #118AB2;">Kế Thừa & Chuyển Đổi</h3>
+                     <p class="text-gray-600">Trước những biến động của thị trường, quyết định chiến lược về việc đổi mới thương hiệu được đưa ra để thích ứng và phát triển.</p>
+                </div>
+                <div class="timeline-item relative">
+                     <h3 class="text-xl font-bold" style="color: #FF6B6B;">Ra Mắt ABSim (05/2025)</h3>
+                     <p class="text-gray-600">ABSim chính thức ra đời, "vẽ tiếp hành trình dang dở", mang theo sứ mệnh cung cấp "Sim Chất - Giá Độc" với một diện mạo và chiến lược mới.</p>
+                </div>
+             </div>
+        </section>
+
+        <footer class="text-center pt-12 border-t border-gray-200">
+             <h3 class="text-2xl font-bold" style="color: #073B4C;">Kết Nối Với ABSim</h3>
+             <p class="text-gray-600 mt-2">Tìm kiếm chiếc sim mơ ước của bạn ngay hôm nay!</p>
+             <div class="mt-6 flex justify-center items-center gap-6">
+                <p><strong>Hotline:</strong> <a href="tel:0941326699" class="text-blue-600 hover:underline">094.132.6699</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@sim.vn" class="text-blue-600 hover:underline">info@sim.vn</a></p>
+             </div>
+             <p class="mt-8 text-sm text-gray-500">&copy; 2025 CÔNG TY CỔ PHẦN SIM.VN. Infographic được tạo dựa trên báo cáo phân tích.</p>
+             
+        </footer>
+
+    </main>
+
+<script>
+    
+    function wrapLabel(str, maxWidth) {
+        if (str.length <= maxWidth) {
+            return str;
+        }
+        const words = str.split(' ');
+        let lines = [];
+        let currentLine = words[0];
+
+        for (let i = 1; i < words.length; i++) {
+            if ((currentLine + ' ' + words[i]).length > maxWidth) {
+                lines.push(currentLine);
+                currentLine = words[i];
+            } else {
+                currentLine += ' ' + words[i];
+            }
+        }
+        lines.push(currentLine);
+        return lines;
+    }
+    
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+          return label.join(' ');
+        }
+        return label;
+    };
+
+    const sharedChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    font: {
+                        family: "'Be Vietnam Pro', sans-serif",
+                        size: 12
+                    }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                   title: tooltipTitleCallback
+                },
+                titleFont: {
+                   family: "'Be Vietnam Pro', sans-serif",
+                },
+                bodyFont: {
+                    family: "'Be Vietnam Pro', sans-serif",
+                },
+                backgroundColor: '#073B4C',
+                titleColor: '#FFFFFF',
+                bodyColor: '#FFFFFF',
+            }
+        }
+    };
+
+    const simTypeCtx = document.getElementById('simTypeDistributionChart').getContext('2d');
+    const simTypeDistributionChart = new Chart(simTypeCtx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                'Sim Phong Thủy (Lộc Phát, Thần Tài)',
+                'Sim Đẳng Cấp (Tứ/Ngũ/Lục Quý)',
+                'Sim Dễ Nhớ (Taxi, Gánh Đảo)',
+                'Sim Khác (Năm Sinh, Số Độc)'
+            ].map(label => wrapLabel(label, 20)),
+            datasets: [{
+                label: 'Phân Bố Loại Sim',
+                data: [40, 30, 20, 10],
+                backgroundColor: [
+                    '#118AB2', 
+                    '#06D6A0',
+                    '#FFD166',
+                    '#FF6B6B'
+                ],
+                borderColor: '#FFFFFF',
+                borderWidth: 3
+            }]
+        },
+        options: {
+            ...sharedChartOptions,
+            plugins: {
+                ...sharedChartOptions.plugins,
+                legend: {
+                    ...sharedChartOptions.plugins.legend,
+                    position: 'right'
+                }
+            }
+        }
+    });
+
+    const carrierCtx = document.getElementById('carrierPartnershipChart').getContext('2d');
+    const carrierPartnershipChart = new Chart(carrierCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Viettel', 'MobiFone', 'Vinaphone', 'Vietnamobile', 'Mạng Khác (Itelecom, Wintel)'].map(label => wrapLabel(label, 16)),
+            datasets: [{
+                label: 'Số Lượng Sim Ước Tính (triệu)',
+                data: [12, 10, 9, 8.5, 3],
+                backgroundColor: ['#06D6A0', '#118AB2', '#FFD166', '#FF6B6B', '#ced4da'],
+                borderRadius: 5,
+            }]
+        },
+        options: {
+            ...sharedChartOptions,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Số lượng (triệu sim)'
+                    }
+                }
+            },
+            plugins: {
+                ...sharedChartOptions.plugins,
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
